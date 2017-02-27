@@ -1,0 +1,7 @@
+{
+	class: com.interrupt.dungeoneer.entities.Player,
+	level: 5,
+	maxHp: 14,
+	hp: 14,
+	startingInventory: [ ]
+}

@@ -1,0 +1,49 @@
+{
+   "animations":{
+      "gunFire":{
+         "class":"com.interrupt.dungeoneer.gfx.animation.lerp3d.LerpedAnimation",
+         "actionTime":10,
+         "frames":[
+            {
+               "transform":{
+                  "x":0.12,
+                  "y":-0.1200,
+                  "z":0.2000
+               },
+               "rotation":{
+                  "x":0.0000,
+                  "y":80.0,
+                  "z":0.0000
+               },
+               length: 0.0
+            },
+            {
+               "transform":{
+                  "x":0.12,
+                  "y":-0.1200,
+                  "z":-0.150
+               },
+               "rotation":{
+                  "x":0.0000,
+                  "y":80.0,
+                  "z":0.0000
+               },
+               length: 1.2
+            },
+            {
+               "transform":{
+                  "x":0.12,
+                  "y":-0.1200,
+                  "z":0.2000
+               },
+               "rotation":{
+                  "x":0.0000,
+                  "y":80.0,
+                  "z":0.0000
+               },
+               length: 0
+            }
+         ]
+      }
+   }
+}

@@ -1,0 +1,261 @@
+{
+    "entities":{
+        "BoardingGuns":{
+            "PISTOL":{
+                "class":"com.interrupt.dungeoneer.entities.items.Gun",
+                "roll":45,
+                "tex":0,
+                "heldTex":1,
+                "spriteAtlas":"boarding-item",
+                "name":"Pistol",
+                "attackAnimation":"gunFire",
+                "attackStrongAnimation":"gunFire",
+                "automatic":false,
+                "projectileNum":1,
+                "projectileSpreadX":3,
+                "projectileSpreadY":3,
+                "cycleTime":7,
+                "ammoType":"BULLET",
+                "twoHanded":true,
+                "baseDamage":10,
+                "randDamage":0,
+                "roll":45,
+                "fireSound": "pistol-shot.mp3",
+                "pickupSound": "gun-cock.mp3",
+                hitEffect: {
+                    class: com.interrupt.dungeoneer.entities.Explosion
+                    explosionStartTex: 18
+                    explosionEndTex: 23
+                    explosionAnimSpeed: 22
+                    damage: 0
+                    lightMod: 0.2
+                    particleCount: 0
+                    shakeAmount: 2
+                    shakeDistance: 2
+                    explosionLightLifetime: 6
+                    impulseAmount: 0
+                    color: { r: 1, g: 1, b: 1}
+                    hitDecal: { artType: sprite, tex: 19, decalWidth: 0.5, decalHeight: 0.5}
+                    explodeSound: "bullet-impact.mp3"
+                }
+            },
+            "RIFLE":{
+                "class":"com.interrupt.dungeoneer.entities.items.Gun",
+                "roll":45,
+                "tex":4,
+                "heldTex":5,
+                "spriteAtlas":"boarding-item",
+                "name":"Assault Rifle",
+                "attackAnimation":"gunFire",
+                "attackStrongAnimation":"gunFire",
+                "automatic":true,
+                "projectileNum":1,
+                "projectileSpreadX":3,
+                "projectileSpreadY":3,
+                "cycleTime":10,
+                "ammoType":"BULLET",
+                "twoHanded":true,
+                "baseDamage":13,
+                "randDamage":0,
+                "roll":45,
+                "fireSound": "rifle-shot.mp3",
+                "pickupSound": "gun-cock.mp3",
+                hitEffect: {
+                    class: com.interrupt.dungeoneer.entities.Explosion
+                    explosionStartTex: 18
+                    explosionEndTex: 23
+                    explosionAnimSpeed: 22
+                    damage: 0
+                    lightMod: 0.2
+                    particleCount: 0
+                    shakeAmount: 2
+                    shakeDistance: 2
+                    explosionLightLifetime: 6
+                    impulseAmount: 0
+                    color: { r: 1, g: 1, b: 1}
+                    hitDecal: { artType: sprite, tex: 19, decalWidth: 0.5, decalHeight: 0.5}
+                    explodeSound: "bullet-impact.mp3"
+                }
+            },
+            "PLASMA RIFLE":{
+                "class":"com.interrupt.dungeoneer.entities.items.Gun",
+                "roll":45,
+                "tex":12,
+                "heldTex":13,
+                "spriteAtlas":"boarding-item",
+                "name":"Plasma Rifle",
+                "attackAnimation":"gunFire",
+                "attackStrongAnimation":"gunFire",
+                "automatic":true,
+                "projectileNum":1,
+                "projectileSpreadX":3,
+                "projectileSpreadY":3,
+                "cycleTime":7,
+                "ammoType":"PLASMA",
+                "twoHanded":true,
+                "baseDamage":8,
+                "randDamage":0,
+                "roll":45,
+                "fireSound": "plasma-shot.mp3",
+                "pickupSound": "gun-cock.mp3",
+                projectile: {
+                    class: com.interrupt.dungeoneer.entities.projectiles.MagicMissileProjectile,
+                    fullbrite: true,
+                    isSolid: true,
+                    tex:15,
+                    spriteAtlas:"particle",
+                    damageType: PHYSICAL,
+                    floating: true,
+                    splashForce: 0,
+                    splashRadius: 0,
+                    collision: { x: 0.2, y: 0.2, z: 0.2 },
+                    color: {a:1.0,b:1.0,g:0.1,r:0.15},
+                    spriteAtlas: "particle",
+                    explosion: {
+                        explosionStartTex: 36,
+                        explosionEndTex: 39,
+                        explosionAnimSpeed: 15.0,
+                        lightMod: 0.45,
+                        explosionLightStartColor: {a:1.0,b:1.0,g:0.1,r:0.15},
+                        explosionLightEndColor: {r:0.0, g:0.0, b:0.0},
+                        explosionLightLifetime: 5,
+                        particleCount: 5,
+                        impulseDistance: 1,
+                        shakeDistance: 5,
+                        shakeAmount: 2,
+                        scale:0.75
+                    },
+                    attached: [
+                        {
+                            class: com.interrupt.dungeoneer.entities.SpriteBeam,
+                            tex: 30,
+                            color: {a:1.0,b:1.0,g:0.1,r:0.15},
+                            yOffset: -0.375,
+                            beamRenderMode: LINE
+                        }
+                    ]
+
+                }
+
+            },
+            "ROCKET LAUNCHER":{
+                "class":"com.interrupt.dungeoneer.entities.items.Gun",
+                "roll":45,
+                "tex":8,
+                "heldTex":9,
+                "spriteAtlas":"boarding-item",
+                "name":"Rocket Launcher",
+                "attackAnimation":"gunFire",
+                "attackStrongAnimation":"gunFire",
+                "automatic":false,
+                "projectileNum":1,
+                "projectileSpreadX":3,
+                "projectileSpreadY":3,
+                "cycleTime":11,
+                "ammoType":"ROCKET",
+                "twoHanded":true,
+                "baseDamage":30,
+                "randDamage":0,
+                "roll":45,
+                "fireSound": "plasma-shot.mp3",
+                "pickupSound": "gun-cock.mp3",
+                projectile: {
+                    class: com.interrupt.dungeoneer.entities.projectiles.MagicMissileProjectile,
+                    tex: 88,
+                    endAnimTex: 95,
+                    animSpeed: 15,
+                    spriteAtlas:"particle",
+                    splashForce : 0.2,
+                    splashRadius: 3.0,
+                    splashDamage: true,
+                    fullbrite:true,
+                    floating: false,
+                    hitDecal: null,
+                    knockback: 0.5,
+                    explosion: {
+                        explosionStartTex: 0,
+                        explosionEndTex: 8,
+                        spriteAtlas:"particle_large",
+                        scale: 2.0,
+                        color: {r:1, g:1, b: 1},
+                        fullbrite:true,
+                        explosionAnimSpeed: 30.0,
+                        explosionLightStartColor: {r: 0.9372, g: 0.8275, b: 0.2078},
+                        explosionLightEndColor: {r: 0.7020, g: 0.1922, b: 0.1922},
+                        particleCount: 5,
+                        impulseDistance: 0.4,
+                        shakeDistance: 1.5,
+                        makeDustRing:true,
+                        dustRingColor: {r:0.2431, g:0.1960, b: 0.1960},
+                        makeFlyAways:true,
+                        flyAwayColor: {r:0.2431, g:0.1960, b: 0.1960},
+                        randomRoll: 20.0,
+                        hitDecal: {
+                            tex: 19,
+                            decalWidth: 1.2,
+                            decalHeight: 1.2,
+                            artType: sprite
+                        }
+                    }
+                }
+
+            },
+            "BULLETS":{
+                "class":"com.interrupt.dungeoneer.entities.items.ItemStack",
+                "tex":16,
+                "spriteAtlas":"boarding-item",
+                "name":"Box of Bullets",
+                "count":40,
+                "stackType":"BULLET",
+                "yOffset":0.05
+            },
+            "BATTERY":{
+                "class":"com.interrupt.dungeoneer.entities.items.ItemStack",
+                "tex":18,
+                "spriteAtlas":"boarding-item",
+                "name":"Plasma Battery",
+                "count":60,
+                "stackType":"PLASMA",
+                "yOffset":0.05
+            },
+            "ROCKET":{
+                "class":"com.interrupt.dungeoneer.entities.items.ItemStack",
+                "tex":17,
+                "spriteAtlas":"boarding-item",
+                "name":"Rockets",
+                "count":5,
+                "stackType":"ROCKET",
+                "yOffset":0.05
+            },
+            "LOOT BODY": {
+                "class": "com.interrupt.dungeoneer.entities.Group",
+                "entities": [
+                    {
+                        "class": "com.interrupt.dungeoneer.entities.Sprite",
+                        "x": -0.14681244,
+                        "y": -0.1506033,
+                        "spriteAtlas": "boarding-sprite",
+                        "isDynamic": false,
+                        "spawnChance": 0.75
+                    },
+                    {
+                        "class": "com.interrupt.dungeoneer.entities.Prefab",
+                        "category": "BoardingGuns",
+                        "name": "GUNS",
+                    },
+                    {
+                        "class": "com.interrupt.dungeoneer.entities.MonsterSpawner",
+                        "monsterTheme": "STATION",
+                        "monsterName": "",
+                        "spawnChance": 0.75
+                    }
+                ]
+            },
+            "GUNS": {
+                "class":"com.interrupt.dungeoneer.entities.Prefab",
+                "name": "BULLETS,BATTERY,ROCKET,ROCKET LAUNCHER,PLASMA RIFLE,RIFLE,PISTOL",
+                "category": "BoardingGuns"
+            }
+        }
+    }
+}

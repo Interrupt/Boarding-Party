@@ -1,0 +1,27 @@
+[
+    {
+        "columns": 16,
+        "filename": "boarding-assets/entities.png",
+        "scale": 1,
+        "name": "boarding-entity"
+    },
+    {
+        "columns": 4,
+        "filename": "boarding-assets/sprites.png",
+        "scale": 1,
+        "name": "boarding-sprite"
+    },
+    {
+        "columns": 4,
+        "filename": "boarding-assets/items.png",
+        "scale": 0.5,
+        "name": "boarding-item",
+        "y_offset": 0.25
+    },
+    {
+        "columns": 8,
+        "filename": "boarding-assets/particles.png",
+        "scale": 1,
+        "name": "boarding-particle"
+    }
+]
