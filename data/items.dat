@@ -1,0 +1,16 @@
+{
+	unique: [ ],
+	melee:{ },
+	ranged:{ },
+	armor:{ },
+	wands:[ ],
+	potions:[ ],
+	scrolls:[ ],
+	decorations:[ ],
+	junk:[ ],
+	food:[ ],
+	weaponEnchantments:[ ],
+	weaponPrefixEnchantments: [ ],
+	armorEnchantments: [ ],
+	armorPrefixEnchantments: [ ]
+}

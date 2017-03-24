@@ -1,0 +1,57 @@
+{
+    "screens.GameOverScreen.win_text_0": {
+        "class":"com.interrupt.dungeoneer.game.LocalizedString",
+        "localizedName":"",
+        "comment":"One of many possibly text snippets shown on the win screen."
+    },
+    "screens.GameOverScreen.win_text_1": {
+        "class":"com.interrupt.dungeoneer.game.LocalizedString",
+        "localizedName":"",
+        "comment":"One of many possibly text snippets shown on the win screen."
+    },
+    "screens.GameOverScreen.win_text_2": {
+        "class":"com.interrupt.dungeoneer.game.LocalizedString",
+        "localizedName":"",
+        "comment":"One of many possibly text snippets shown on the win screen."
+    },
+    "screens.GameOverScreen.win_text_3": {
+        "class":"com.interrupt.dungeoneer.game.LocalizedString",
+        "localizedName":"",
+        "comment":"One of many possibly text snippets shown on the win screen."
+    },
+    "screens.GameOverScreen.win_text_4": {
+        "class":"com.interrupt.dungeoneer.game.LocalizedString",
+        "localizedName":"",
+        "comment":"One of many possibly text snippets shown on the win screen."
+    },
+    "screens.GameOverScreen.win_text_5": {
+        "class":"com.interrupt.dungeoneer.game.LocalizedString",
+        "localizedName":"",
+        "comment":"One of many possibly text snippets shown on the win screen."
+    },
+    "screens.GameOverScreen.win_text_6": {
+        "class":"com.interrupt.dungeoneer.game.LocalizedString",
+        "localizedName":"",
+        "comment":"One of many possibly text snippets shown on the win screen."
+    },
+    "screens.GameOverScreen.win_text_7": {
+        "class":"com.interrupt.dungeoneer.game.LocalizedString",
+        "localizedName":"",
+        "comment":"One of many possibly text snippets shown on the win screen."
+    },
+    "screens.GameOverScreen.delverEscapedText": {
+        "class":"com.interrupt.dungeoneer.game.LocalizedString",
+        "localizedName":"YOU ESCAPED!",
+        "comment":"Shown on the win screen."
+    },
+    "screens.GameOverScreen.recoveredOrbText": {
+        "class":"com.interrupt.dungeoneer.game.LocalizedString",
+        "localizedName":"GOOD JOB SPACE MARINE",
+        "comment":"Shown on the win screen."
+    },
+    "screens.GameOverScreen.goodbyeDelverText": {
+        "class":"com.interrupt.dungeoneer.game.LocalizedString",
+        "localizedName":"GOODBYE SPACE MARINE",
+        "comment":"Shown on the game over screen."
+    }
+}

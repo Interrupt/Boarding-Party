@@ -1,16 +1,16 @@
 {
-	exitDown: {
-		class: com.interrupt.dungeoneer.entities.Stairs,
-		tex: 7,
-		tileMaterial: null,
-		hidden: true
-	},
-	exitUp: {
-		class: com.interrupt.dungeoneer.entities.Stairs,
-		tex: 7,
-		tileMaterial: null,
-		hidden: true
-	},
+    exitDown: {
+        class: com.interrupt.dungeoneer.entities.Stairs,
+        tex: 7,
+        tileMaterial: null,
+        hidden: true
+    },
+    exitUp: {
+        class: com.interrupt.dungeoneer.entities.Stairs,
+        tex: 7,
+        tileMaterial: null,
+        hidden: true
+    },
 	doors: [
 	],
 	genInfos: [ ]
