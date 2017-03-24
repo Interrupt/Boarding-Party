@@ -3,5 +3,6 @@
 	maxHp: 40,
 	hp: 40,
 	startingInventory: [ ],
-	canLevelUp: false
+	canLevelUp: false,
+	stats: { SPD: 9 }
 }
